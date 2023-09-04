@@ -1,8 +1,16 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <NavbarWrapper>
+    <NavbarWrapper className='d-flex align-items-center'>
+      <div className='container w-100'>
+        <div className='navbar-content'>
+          <div className='brand-and-toggler d-flex align-items-center justify-content-between'>
+            <Link to = "/" className = "navbar-brand text-white text-uppercase no-wrap">cool <span>games</span></Link>
+          </div>
+        </div>
+      </div>
     </NavbarWrapper>
   )
 }
