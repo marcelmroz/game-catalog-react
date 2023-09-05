@@ -4,7 +4,7 @@ import { HiMenuAlt3} from 'react-icons/hi';
 import { BsRssFill, BsSteam, BsTwitch, BsYoutube} from "react-icons/bs";
 import { MdClose } from 'react-icons/md';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectSidebarStatus } from '../../redux/store/sidebarSlice';
+import { selectSidebarStatus, setSidebarOff, setSidebarOn } from '../../redux/store/sidebarSlice';
 
 const Navbar = () => {
   const dispatch = useDispatch();
@@ -16,12 +16,12 @@ const Navbar = () => {
         <div className='navbar-content'>
           <div className='brand-and-toggler d-flex align-items-center justify-content-between'>
             <Link to = "/" className = "navbar-brand text-white text-uppercase no-wrap">cool <span>games</span></Link>
-            < button type='button' className='navbar-show-btn text-white'>
+            < button type='button' className='navbar-show-btn text-white' onClick={() => dispatch(setSidebarOn())}>
               <HiMenuAlt3 size={25} />
             </button>
           </div>
-          <div className={'navbar-collapse'}>
-            <button type='button' className='navbar-hide-btn'>
+          <div className={`navbar-collapse ${sidebarStatus ? "show" : " " }`}>
+            <button type='button' className='navbar-hide-btn' onClick={() => dispatch(setSidebarOff())}>
               <MdClose size = {25} />
             </button>
 

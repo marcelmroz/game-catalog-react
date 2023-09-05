@@ -1,9 +1,11 @@
 import styled from 'styled-components';
+import { Banner } from '../../components/common/index';
 
 const HomePage = () => {
 
   return (
     <HomeWrapper>
+      <Banner />
     </HomeWrapper>
   )
 }

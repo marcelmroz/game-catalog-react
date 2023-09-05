@@ -1,8 +1,17 @@
 import styled from 'styled-components';
+import { banner_image } from '../../utils/images';
+import { FaGamepad } from 'react-icons/fa';
 
 const Banner = () => {
   return (
-    <BannerWrapper>
+    <BannerWrapper className='d-flex align-items-center justify-content-start' style={{
+      background: `linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)),linear-gradient(248.75deg, rgba(0, 159, 157, 0.41) 0%, rgba(15, 10, 50, 0.41)38.46%), url(${banner_image}) center/cover no-repeat`
+    }}>
+      <div className='banner-content w-100 container text-white'>
+        <div className='banner-badge text-uppercase'> join streaming</div>
+        <div className='banner-title text-uppercase'>best online game to play</div>
+        <p className='lead-text'>Live gaming with lots od other games. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
     </BannerWrapper>
   )
 }
