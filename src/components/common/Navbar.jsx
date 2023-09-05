@@ -3,8 +3,13 @@ import { Link } from 'react-router-dom';
 import { HiMenuAlt3} from 'react-icons/hi';
 import { BsRssFill, BsSteam, BsTwitch, BsYoutube} from "react-icons/bs";
 import { MdClose } from 'react-icons/md';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectSidebarStatus } from '../../redux/store/sidebarSlice';
 
 const Navbar = () => {
+  const dispatch = useDispatch();
+  const sidebarStatus = useSelector(selectSidebarStatus);
+
   return (
     <NavbarWrapper className='d-flex align-items-center'>
       <div className='container w-100'>
