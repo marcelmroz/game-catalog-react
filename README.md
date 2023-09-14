@@ -2,7 +2,8 @@
 
 ## Home Page
 
-![Home Page](./github_images/home_page.
+![Home Page](./github_images/home_page_1.png)
+![Home Page](./github_images/home_page_2.png)
 
 Currently, two official plugins are available:
 
