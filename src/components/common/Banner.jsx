@@ -10,7 +10,13 @@ const Banner = () => {
       <div className='banner-content w-100 container text-white'>
         <div className='banner-badge text-uppercase'> join streaming</div>
         <div className='banner-title text-uppercase'>best online game to play</div>
-        <p className='lead-text'>Live gaming with lots od other games. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p className='lead-text'>Live gaming with lots od other games. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <button type='button' className='banner-btn d-flex align-items-center'>
+          <span className='btn-icon'>
+            <FaGamepad className='text-white' size = { 25 } />
+          </span>
+          <span className='btn-text text-green'>play now</span>
+        </button>
       </div>
     </BannerWrapper>
   )

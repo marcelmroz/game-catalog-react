@@ -13,5 +13,5 @@ function App() {
     </div>
   )
 }
-
+//47:19 https://www.youtube.com/watch?v=TuOF8ppiKDY
 export default App
